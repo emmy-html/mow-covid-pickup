@@ -135,7 +135,6 @@ h1, h2, h3, h4, h5, h6 {
   .content-wrapper {
     p {
       font-size: 1rem;
-      text-align: justify;
     }
   }
   .button-container {
@@ -163,10 +162,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
   .meal-pickup-locations {
-    display: flex;
-    flex-direction: column;
     aside {
+      width: 100%;
       padding-bottom: 25px;
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div {
+          width: 100%;
+        }
+      }
       h3 {
         font-size: 1rem;
         text-transform: uppercase;
@@ -205,23 +211,28 @@ h1, h2, h3, h4, h5, h6 {
         line-height: 1.25rem;
       }
     }
-    .meal-pickup-locations {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      align-items: flex-start;
-      aside {
-        width: 50%;
-      }
-    }
   }  
 }
 /* Desktop Styles */ 
 @media screen and (min-width: 1200px) {
   .meal-pickup-container {
     .meal-pickup-locations {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       aside {
-        width: 30%;
+        width: 100%;
+        .content-wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: center;
+          text-align: center;
+        }
+        div:nth-of-type(2) {
+          width: 55%;
+        }
       }
     }
   }

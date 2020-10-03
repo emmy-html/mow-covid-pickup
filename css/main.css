@@ -109,8 +109,7 @@ h1, h2, h3, h4, h5, h6 {
     .meal-pickup-container h1 span {
       color: #a9cf38; }
   .meal-pickup-container .content-wrapper p {
-    font-size: 1rem;
-    text-align: justify; }
+    font-size: 1rem; }
   .meal-pickup-container .button-container {
     background: #003952;
     border-radius: 5px;
@@ -133,27 +132,31 @@ h1, h2, h3, h4, h5, h6 {
         border: none;
         color: #003952;
         transition: 1s background-color; }
-  .meal-pickup-container .meal-pickup-locations {
-    display: flex;
-    flex-direction: column; }
-    .meal-pickup-container .meal-pickup-locations aside {
-      padding-bottom: 25px; }
-      .meal-pickup-container .meal-pickup-locations aside h3 {
-        font-size: 1rem;
-        text-transform: uppercase;
-        line-height: 1rem;
-        margin: 0; }
-        .meal-pickup-container .meal-pickup-locations aside h3 span {
-          display: block;
-          font-weight: 300;
-          line-height: 1.20rem;
-          text-transform: none; }
-      .meal-pickup-container .meal-pickup-locations aside .pick-up-time {
-        padding-bottom: 10px; }
-      .meal-pickup-container .meal-pickup-locations aside p {
-        line-height: 1rem;
-        margin: 0;
-        padding-bottom: 10px; }
+  .meal-pickup-container .meal-pickup-locations aside {
+    width: 100%;
+    padding-bottom: 25px; }
+    .meal-pickup-container .meal-pickup-locations aside .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .meal-pickup-container .meal-pickup-locations aside .content-wrapper div {
+        width: 100%; }
+    .meal-pickup-container .meal-pickup-locations aside h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      line-height: 1rem;
+      margin: 0; }
+      .meal-pickup-container .meal-pickup-locations aside h3 span {
+        display: block;
+        font-weight: 300;
+        line-height: 1.20rem;
+        text-transform: none; }
+    .meal-pickup-container .meal-pickup-locations aside .pick-up-time {
+      padding-bottom: 10px; }
+    .meal-pickup-container .meal-pickup-locations aside p {
+      line-height: 1rem;
+      margin: 0;
+      padding-bottom: 10px; }
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) {
@@ -166,18 +169,24 @@ h1, h2, h3, h4, h5, h6 {
     .meal-pickup-container .button-container a:link,
     .meal-pickup-container .button-container a:visited {
       font-size: 1.5rem;
-      line-height: 1.25rem; }
-  .meal-pickup-container .meal-pickup-locations {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start; }
-    .meal-pickup-container .meal-pickup-locations aside {
-      width: 50%; } }
+      line-height: 1.25rem; } }
 /* Desktop Styles */
 @media screen and (min-width: 1200px) {
-  .meal-pickup-container .meal-pickup-locations aside {
-    width: 30%; } }
+  .meal-pickup-container .meal-pickup-locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .meal-pickup-container .meal-pickup-locations aside {
+      width: 100%; }
+      .meal-pickup-container .meal-pickup-locations aside .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center; }
+      .meal-pickup-container .meal-pickup-locations aside div:nth-of-type(2) {
+        width: 55%; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
