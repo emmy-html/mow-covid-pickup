@@ -123,7 +123,8 @@ h1, h2, h3, h4, h5, h6 {
     background: $dark-blue;
     border-radius: 5px 5px 0px 0px;
     color: #fff;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
+    line-height: 1.10rem !important;
     padding: 10px 20px;
     text-align: center;
     text-transform: uppercase;
@@ -195,11 +196,63 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+  /* Volunteer CTA */
+  .volunteer-cta {
+    .content-wrapper {
+      padding-bottom: 20px;
+      .volunteer-cta-content {
+        h1 {
+          span {
+            color: #fff;
+          }
+        }
+        aside {
+          i {
+            background: $dark-blue;
+            border-radius: 100px;
+            color: $lime-green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+          }
+          a:link,
+          a:visited {
+            color: $dark-blue;
+            font-weight: 700;
+            text-decoration: none;
+          }
+          a:hover {
+            border-bottom: 2px solid $lime-green;
+          }
+          p {
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
 }
 /* Tablet Styles */
 @media screen and (min-width: 768px) {
   #main-content {
     padding: 60px;
+    .volunteer-cta {
+      .volunteer-cta-content {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+          span {
+            display: block;
+          }
+        }
+        aside {
+          width: 45%;
+        }
+      }
+    }
   }
   .meal-pickup-container {
     .button-container {

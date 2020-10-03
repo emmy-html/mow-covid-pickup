@@ -96,12 +96,14 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   color: #003952;
   margin: 0 auto;
-  width: 80%; }
+  width: 80%;
+  /* Volunteer CTA */ }
   .meal-pickup-container h1 {
     background: #003952;
     border-radius: 5px 5px 0px 0px;
     color: #fff;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
+    line-height: 1.10rem !important;
     padding: 10px 20px;
     text-align: center;
     text-transform: uppercase;
@@ -157,11 +159,41 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 1rem;
       margin: 0;
       padding-bottom: 10px; }
+  .meal-pickup-container .volunteer-cta .content-wrapper {
+    padding-bottom: 20px; }
+    .meal-pickup-container .volunteer-cta .content-wrapper .volunteer-cta-content h1 span {
+      color: #fff; }
+    .meal-pickup-container .volunteer-cta .content-wrapper .volunteer-cta-content aside i {
+      background: #003952;
+      border-radius: 100px;
+      color: #a9cf38;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto; }
+    .meal-pickup-container .volunteer-cta .content-wrapper .volunteer-cta-content aside a:link,
+    .meal-pickup-container .volunteer-cta .content-wrapper .volunteer-cta-content aside a:visited {
+      color: #003952;
+      font-weight: 700;
+      text-decoration: none; }
+    .meal-pickup-container .volunteer-cta .content-wrapper .volunteer-cta-content aside a:hover {
+      border-bottom: 2px solid #a9cf38; }
+    .meal-pickup-container .volunteer-cta .content-wrapper .volunteer-cta-content aside p {
+      text-align: justify; }
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) {
   #main-content {
     padding: 60px; }
+    #main-content .volunteer-cta .volunteer-cta-content {
+      display: flex;
+      justify-content: space-between; }
+      #main-content .volunteer-cta .volunteer-cta-content h1 span {
+        display: block; }
+      #main-content .volunteer-cta .volunteer-cta-content aside {
+        width: 45%; }
 
   .meal-pickup-container .button-container {
     font-size: 1.5rem;
