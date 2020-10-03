@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1.5rem;
       line-height: 1.25rem; } }
 /* Desktop Styles */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .meal-pickup-container .meal-pickup-locations {
     display: flex;
     flex-direction: column;
